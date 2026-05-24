@@ -11,7 +11,7 @@ const formSchema = z.object({
   customer_name: z.string().min(2, "Name must be at least 2 characters"),
   mobile_number: z.string().min(10, "Please enter a valid phone number"),
   service_requested: z.enum(["Wendy Houses", "Tree Felling", "Renovations", "Swimming Pools", "Plumbing", "Other"], {
-    errorMap: () => ({ message: "Please select a service" })
+    message: "Please select a service"
   }),
   message: z.string().optional(),
 });
