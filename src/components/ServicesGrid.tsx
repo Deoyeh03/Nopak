@@ -7,7 +7,7 @@ const services = [
   {
     title: "Swimming Pools",
     description: "Custom design, installation, and maintenance of premium swimming pools.",
-    image: "https://images.unsplash.com/photo-1576013551627-11971f36c9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1572331165267-854da2f10ccc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Wendy Houses",
@@ -27,7 +27,7 @@ const services = [
   {
     title: "Plumbing",
     description: "Expert plumbing solutions for residential and commercial properties.",
-    image: "https://images.unsplash.com/photo-1607472586893-edb57cbce4ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1505798577917-a65157d3320a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
 ];
 
