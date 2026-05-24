@@ -46,7 +46,7 @@ export default function HeroSection() {
             Call Now
           </a>
           <a 
-            href="https://wa.me/27678224890?text=Hi%20Nopak" 
+            href="https://wa.me/27678224890?text=Hi%20Nopak%20Projects%2C%20I%20would%20like%20to%20request%20a%20quote..." 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 text-base md:text-lg font-bold text-white border-2 border-white rounded-full hover:bg-white/10 transition-colors"
