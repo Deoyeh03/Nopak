@@ -1,0 +1,60 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+export default function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Dark Overlay */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1576013551627-11971f36c9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')" }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div className="relative z-10 text-center px-4 md:px-8 max-w-5xl mx-auto flex flex-col items-center">
+        <motion.h1 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6"
+        >
+          High-Quality Property & <br className="hidden md:block" />
+          <span className="text-brand-gold">Construction Solutions</span>
+        </motion.h1>
+        
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl"
+        >
+          Premium services for Wendy Houses, Tree Felling, Renovations, Swimming Pools, and Plumbing across Gauteng.
+        </motion.p>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+        >
+          <a 
+            href="tel:+27678224890" 
+            className="inline-flex items-center justify-center px-8 py-4 text-base md:text-lg font-bold text-brand-blue bg-brand-gold rounded-full hover:bg-yellow-400 transition-colors shadow-lg shadow-brand-gold/20"
+          >
+            Call Now
+          </a>
+          <a 
+            href="https://wa.me/27678224890?text=Hi%20Nopak" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-8 py-4 text-base md:text-lg font-bold text-white border-2 border-white rounded-full hover:bg-white/10 transition-colors"
+          >
+            Chat on WhatsApp
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
