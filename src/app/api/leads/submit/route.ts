@@ -2,9 +2,6 @@ import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import * as z from "zod";
 
-// Initialize Supabase admin client (requires service role key to bypass RLS for inserts if needed, 
-// though the RLS policy allows public inserts, so anon key would also work. 
-// Using service role for backend operations is often safer for other queries, but here anon is fine if configured).
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
@@ -43,11 +40,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Failed to submit lead" }, { status: 500 });
     }
 
-    // 3. Action 2: Notification (Mocked for now until Resend/Twilio keys are provided)
-    // TODO: Integrate Resend or Twilio here
-    console.log(`[Notification] New lead received from ${validatedData.customer_name} for ${validatedData.service_requested}. Phone: ${validatedData.mobile_number}`);
-
-    // 4. Action 3: Response
+    // 3. Action 2: Response
     return NextResponse.json({ success: true, lead: data }, { status: 200 });
     
   } catch (error) {

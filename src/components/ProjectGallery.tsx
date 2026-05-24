@@ -1,18 +1,29 @@
 "use client";
 
-import { useState } from "热门";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { X } from "lucide-react";
 
 // Placeholder images since the 17 images are pending.
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1576013551627-11971f36c9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", category: "swimming_pools" },
-  { id: 2, src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", category: "wendy_houses" },
-  { id: 3, src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", category: "renovations" },
-  { id: 4, src: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", category: "tree_felling" },
-  { id: 5, src: "https://images.unsplash.com/photo-1607472586893-edb57cbce4ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", category: "plumbing" },
-  { id: 6, src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", category: "renovations" },
+  { id: 1, src: "/images/31490.jpg", category: "project" },
+  { id: 2, src: "/images/31493.jpg", category: "project" },
+  { id: 3, src: "/images/31496.jpg", category: "project" },
+  { id: 4, src: "/images/31499.jpg", category: "project" },
+  { id: 5, src: "/images/31508.jpg", category: "project" },
+  { id: 6, src: "/images/31510.jpg", category: "project" },
+  { id: 7, src: "/images/31512.jpg", category: "project" },
+  { id: 8, src: "/images/31514.jpg", category: "project" },
+  { id: 9, src: "/images/31515.jpg", category: "project" },
+  { id: 10, src: "/images/31516.jpg", category: "project" },
+  { id: 11, src: "/images/31517.jpg", category: "project" },
+  { id: 12, src: "/images/31522.jpg", category: "project" },
+  { id: 13, src: "/images/31524.jpg", category: "project" },
+  { id: 14, src: "/images/31526.jpg", category: "project" },
+  { id: 15, src: "/images/31527.jpg", category: "project" },
+  { id: 16, src: "/images/31530.jpg", category: "project" },
+  { id: 17, src: "/images/31532.jpg", category: "project" },
 ];
 
 export default function ProjectGallery() {

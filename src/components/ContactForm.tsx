@@ -57,8 +57,16 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-24 px-4 md:px-8 bg-brand-blue relative" id="contact">
-      <div className="max-w-3xl mx-auto">
+    <section className="relative py-24 px-4 md:px-8" id="contact">
+      {/* Background Image with Dark Overlay */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/31515.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-brand-blue/90"></div>
+      </div>
+      
+      <div className="max-w-3xl mx-auto relative z-10">
         <div className="text-center mb-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
