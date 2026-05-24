@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background Image with Dark Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/31514.jpg')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1576013551627-11971f36c9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')" }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
       </div>

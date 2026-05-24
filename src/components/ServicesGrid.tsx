@@ -7,27 +7,27 @@ const services = [
   {
     title: "Swimming Pools",
     description: "Custom design, installation, and maintenance of premium swimming pools.",
-    image: "/images/31490.jpg",
+    image: "https://images.unsplash.com/photo-1576013551627-11971f36c9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Wendy Houses",
     description: "High-quality, durable Wendy houses for storage, living, or office space.",
-    image: "/images/31493.jpg",
+    image: "https://images.unsplash.com/photo-1587061949409-02df41d5e562?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Renovations",
     description: "Complete home and office renovations tailored to your aesthetic.",
-    image: "/images/31496.jpg",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Tree Felling",
     description: "Safe and professional tree felling and removal services.",
-    image: "/images/31499.jpg",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Plumbing",
     description: "Expert plumbing solutions for residential and commercial properties.",
-    image: "/images/31508.jpg",
+    image: "https://images.unsplash.com/photo-1607472586893-edb57cbce4ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
 ];
 
