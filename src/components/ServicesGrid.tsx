@@ -31,7 +31,11 @@ const services = [
   },
 ];
 
-export default function ServicesGrid() {
+interface ServicesGridProps {
+  categoryImages: Record<string, string>;
+}
+
+export default function ServicesGrid({ categoryImages }: ServicesGridProps) {
   return (
     <section className="py-24 px-4 md:px-8 bg-brand-blue" id="services">
       <div className="max-w-7xl mx-auto">
@@ -68,7 +72,7 @@ export default function ServicesGrid() {
               {/* Circular Asymmetric Image Mask */}
               <div className="w-48 h-48 mb-6 overflow-hidden rounded-full shadow-lg shadow-black/50 group-hover:scale-105 transition-transform duration-500">
                 <Image
-                  src={service.image}
+                  src={categoryImages[service.title] || service.image}
                   alt={service.title}
                   width={300}
                   height={300}

@@ -26,8 +26,14 @@ const galleryImages = [
   { id: 17, src: "/images/31532.jpg", category: "project" },
 ];
 
-export default function ProjectGallery() {
+interface ProjectGalleryProps {
+  images?: { id: string | number; src: string; category: string }[];
+}
+
+export default function ProjectGallery({ images = [] }: ProjectGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  
+  const displayImages = images.length > 0 ? images : galleryImages;
 
   return (
     <section className="py-24 px-4 md:px-8 bg-brand-blue/95" id="gallery">
@@ -48,7 +54,7 @@ export default function ProjectGallery() {
 
         {/* Masonry Layout */}
         <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
-          {galleryImages.map((img, index) => (
+          {displayImages.map((img, index) => (
             <motion.div
               key={img.id}
               initial={{ opacity: 0, y: 20 }}
