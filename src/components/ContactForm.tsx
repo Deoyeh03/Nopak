@@ -61,7 +61,7 @@ export default function ContactForm() {
       {/* Background Image with Dark Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1541888081621-72fa2c954e7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')" }}
+        style={{ backgroundImage: "url('/images/31515.jpg')" }}
       >
         <div className="absolute inset-0 bg-brand-blue/90"></div>
       </div>
